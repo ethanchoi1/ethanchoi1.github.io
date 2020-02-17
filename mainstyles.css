@@ -4,9 +4,19 @@ body {
 	margin: 0;
 }
 
+a {
+	outline: 0;
+}
+
 .header {
+	/*
+	f22948
+	AC001B
+	DF0023
+	*/
 	background-color: #f22948;
 	width: 100%;
+	min-width: 728px;
 	height: 92px;
 	position: fixed;
 	padding-bottom: 8px;
@@ -36,7 +46,7 @@ body {
 }
 
 .title a:hover {
-	opacity: .5;
+	opacity: .6;
 }
 
 .navbar {
@@ -70,11 +80,12 @@ body {
 .projects-dropdown #projects {
 	padding-bottom: 1px;
 	border-bottom: 5px solid white;
-	transition: border-bottom .5s;
+	transition: opacity .5s, border-bottom .5s;
 }
 
 .projects-dropdown:hover #projects {
-	border-bottom: 5px solid red;
+	opacity: .6;
+	border-bottom: 5px solid #DF0023;
 }
 
 .projects-dropdown:hover .dropdown-content {
@@ -111,14 +122,37 @@ body {
 
 #contact {
 	border-bottom: 5px solid white;
-	transition: border-bottom .5s;
+	transition: opacity .5s, border-bottom .5s;
 }
 
 #contact:hover {
-	border-bottom: 5px solid green;
+	opacity: .6;
+	border-bottom: 5px solid #DF0023;
+	
 }
 
-.center {
+
+.center-alignment {
+	top: 10px;
+	position: relative;
+	margin: 100px auto;
+	width: 728px;
+	height: 600px;
+	border: black dashed 1px;
+	border-radius: 20px;
+}
+
+/* 
+_________________________________________
+*****************************************
+*****************************************
+*****       MAIN PAGE STYLES        *****
+*****************************************
+*****************************************
+
+*/
+
+.main-center1 {
 	/*background-color: lightblue;*/
 	top: 10px;
 	position: relative;
@@ -128,7 +162,7 @@ body {
 	border: black dashed 1px;
 }
 
-.center #main_img img {
+.main-center1 #main_img img {
 	height: auto;
 	float: right;
 	position: absolute;
@@ -138,7 +172,7 @@ body {
 	top: 1%;
 }
 
-.center .about {
+.main-center1 .about {
 	/*background-color: lightgreen;*/
 	top: 0;
 	max-width: 50%;
@@ -146,7 +180,7 @@ body {
 	position: absolute;
 }
 
-.center .about-Ethan-title p {
+.main-center1 .about-Ethan-title p {
 	position: relative;
 	font-family: "Arial", "Veranda";
 	left: 2.5%;
@@ -155,7 +189,7 @@ body {
 	font-size: 36px;
 }
 
-.center .about-Ethan p {
+.main-center1 .about-Ethan p {
 	position: relative;
 	font-family: "Arial", "Veranda";
 	left: 2.5%;
@@ -172,3 +206,131 @@ body {
 	margin-right: auto;
 	left: 12.5%;
 }
+
+/* 
+_________________________________________
+*****************************************
+*****************************************
+*****      PROJECT PAGE STYLES      *****
+*****************************************
+*****************************************
+
+*/
+
+#project-link1 {
+	color: black;
+	text-decoration: none;
+	height: 100%
+	width: 100%;
+	background-color: pink;
+}
+
+.project-body1 {
+	/*background-color: pink;*/
+	top: 0;
+	max-width: 65%;
+	height: 42.5%;
+	position: relative;
+}
+
+.project-center1 {
+	top: 0;
+	position: relative;
+	width: 728px;
+	height: 175px;
+	border: black dashed 1px;
+	transition: background-color .5s;
+	border-radius: 20px;
+}
+
+.project-center1 p {
+	font-family: "Arial", "Veranda";
+}
+
+.project-center1:hover {
+	background-color: #eee;
+}
+
+.project-center1 .project-about-title1 {
+	/*background-color: lightgreen;*/
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.project-center1 .project-about1 {
+	/*background-color: lightblue;*/
+	top: 0;
+	max-width: 100%;
+	height: 42.5%;
+	position: absolute;
+}
+
+.project-center1 .project-about-title1 p {
+	position: relative;
+	left: 2.5%;
+	top: -25px;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.project-center1 .project-about1 p {
+	position: relative;
+	left: 2.5%;
+	font-size: 18px;
+	top: 50px;
+}
+
+.project-center1 #google-homepage-thumbnail img {
+	height: auto;
+	float: right;
+	position: absolute;
+	display: block;
+	right: 1%;
+	top: 7%;
+	width: 30%;
+	height: 80%;
+	border-radius: 10px;
+	border: solid 2px;
+}
+
+.clickable {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+/*.project-link-area1 {
+	background-color: pink;
+	position: relative;
+	display: inline-block;
+	top: 25%;
+	left: 1%;
+}*/
+
+.github-logo img {
+	position: relative;
+	top: -125px;
+	left: 100%;
+	width: 10%;
+	height: 10%;
+	transition: opacity .5s;
+}
+
+.github-logo img:hover {
+	opacity: .6;
+}
+
+/* 
+_________________________________________
+*****************************************
+*****************************************
+*****      CONTACT PAGE STYLES      *****
+*****************************************
+*****************************************
+
+*/
+
