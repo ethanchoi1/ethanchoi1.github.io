@@ -128,7 +128,6 @@ a {
 #contact:hover {
 	opacity: .6;
 	border-bottom: 5px solid #DF0023;
-	
 }
 
 
@@ -137,7 +136,7 @@ a {
 	position: relative;
 	margin: 100px auto;
 	width: 728px;
-	height: 600px;
+	height: 600px
 	border: black dashed 1px;
 	border-radius: 20px;
 }
@@ -217,24 +216,9 @@ _________________________________________
 
 */
 
-#project-link1 {
-	color: black;
-	text-decoration: none;
-	height: 100%
-	width: 100%;
-	background-color: pink;
-}
-
-.project-body1 {
-	/*background-color: pink;*/
-	top: 0;
-	max-width: 65%;
-	height: 42.5%;
-	position: relative;
-}
-
 .project-center1 {
 	top: 0;
+	margin: 15px 0;
 	position: relative;
 	width: 728px;
 	height: 175px;
@@ -243,7 +227,12 @@ _________________________________________
 	border-radius: 20px;
 }
 
-.project-center1 p {
+.project-body1 {
+	/*background-color: pink;*/
+	top: 0;
+	max-width: 65%;
+	height: 42.5%;
+	position: relative;
 	font-family: "Arial", "Veranda";
 }
 
@@ -303,18 +292,10 @@ _________________________________________
 	border-radius: 20px;
 }
 
-/*.project-link-area1 {
-	background-color: pink;
-	position: relative;
-	display: inline-block;
-	top: 25%;
-	left: 1%;
-}*/
-
 .github-logo img {
 	position: relative;
-	top: -125px;
-	left: 100%;
+	top: -140px;
+	left: 730px;
 	width: 10%;
 	height: 10%;
 	transition: opacity .5s;
@@ -334,3 +315,22 @@ _________________________________________
 
 */
 
+.contact-about-title p {
+	position: relative;
+	left: 10%;
+	top: 12px;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+#contact-logo img {
+	height: auto;
+	float: right;
+	position: absolute;
+	display: block;
+	right: 1%;
+	top: 7%;
+	width: 20%;
+	height: 80%;
+	border-radius: 10px;
+}
