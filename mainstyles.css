@@ -2,6 +2,7 @@ body {
 	/*background-color: rgb(229, 92, 84);*/
 	/*#031f2b*/
 	margin: 0;
+	font-family: "Arial", "Veranda", "Times New Roman";
 }
 
 a {
@@ -35,7 +36,6 @@ a {
 	font-size: 60px;
 	position: absolute;
 	top: 25px;
-	font-family: "Arial", "Veranda", "Times New Roman";
 }
 
 .title a {
@@ -54,7 +54,6 @@ a {
 	top: 25px;
 	right: 0px;
 	background-color: transparent;
-	font-family: "Arial", "Veranda", "Times New Roman";
 }
 
 .navbar ul li {
@@ -155,7 +154,7 @@ _________________________________________
 	/*background-color: lightblue;*/
 	top: 10px;
 	position: relative;
-	margin: 100px auto;
+	margin: 100px auto 0 auto;
 	width: 728px;
 	height: 450px;
 	border: black dashed 1px;
@@ -167,11 +166,11 @@ _________________________________________
 	position: absolute;
 	border: solid 4px;
 	display: block;
-	right: 1%;
-	top: 1%;
+	right: 18px;
+	top: 18px;
 }
 
-.main-center1 .about {
+.about {
 	/*background-color: lightgreen;*/
 	top: 0;
 	max-width: 50%;
@@ -179,31 +178,96 @@ _________________________________________
 	position: absolute;
 }
 
-.main-center1 .about-Ethan-title p {
+.about-Ethan-title p {
 	position: relative;
-	font-family: "Arial", "Veranda";
 	left: 2.5%;
 	top: -25px;
 	font-weight: bold;
 	font-size: 36px;
 }
 
-.main-center1 .about-Ethan p {
+.about-Ethan {
+	/*background-color: pink;*/
 	position: relative;
-	font-family: "Arial", "Veranda";
 	left: 2.5%;
 	font-size: 18px;
 	top: -50px;
 }
 
+.main-center2 {
+	/*background-color: lightblue;*/
+	top: 10px;
+	position: relative;
+	margin: 15px auto;
+	width: 728px;
+	height: 200px;
+	border: black dashed 1px;
+}
+
+.fun-facts {
+	/*background-color: lightgreen;*/
+	top: 0;
+	max-width: 100%;
+	height: 42.5%;
+	position: absolute;
+}
+
+.about-Ethan {
+	/*background-color: pink;*/
+	position: relative;
+	left: 2.5%;
+	font-size: 18px;
+	top: -50px;
+}
+
+/*
+.fun-facts-body {
+	background-color: pink;
+	position: relative;
+	top: -50px;
+}
+*/
+
 .footer {
+	background-color: #f22948;
 	position: fixed;
-	background-color: gray;
-	width: 75%;
+	width: 100%;
 	bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	left: 12.5%;
+	left: 0;
+	z-index: 100;
+	height: 30px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	transition: opacity .5s;
+}
+
+.footer a:hover {
+	opacity: .5;
+}
+
+.footer #view-on-github {
+	/*background-color: lightgreen;*/
+	position: absolute;
+	display: inline-block;
+	top: 2px;
+	right: 2%;
+	font-size: 20px;
+}
+
+.footer .contacts {
+	/*background-color: lightgreen;*/
+	position: absolute;
+	display: inline-block;
+	top: 2px;
+	left: 2%;
+	font-size: 20px;
+}
+
+.footer .contacts a {
+	margin-right: 20px;
 }
 
 /* 
@@ -233,7 +297,6 @@ _________________________________________
 	max-width: 65%;
 	height: 42.5%;
 	position: relative;
-	font-family: "Arial", "Veranda";
 }
 
 .project-center1:hover {
