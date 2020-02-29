@@ -51,11 +51,13 @@ a {
 	position: relative;
 	width: 100%;
 	margin: 0;
+
 }
 
 .background img {
 	max-width: 100%;
 	height: 100%;
+	left: 2005px;
 }
 
 #header-place {
@@ -193,7 +195,6 @@ a {
 	margin: 100px auto;
 	width: 1080px;
 	height: 600px
-	border: black dashed 1px;
 	border-radius: 20px;
 	/*background-color: lightgreen;*/
 }
@@ -238,6 +239,8 @@ _________________________________________
 	left: -100px;
 	top: 30px;
 	height: 120%;
+	box-shadow: 0 30px 30px 0 lightgray;
+	border-radius: 10px;
 }
 
 .main-center1 .about {
@@ -316,10 +319,11 @@ _________________________________________
 	position: relative;
 	width: 1080px;
 	height: 175px;
-	border: black dashed 1px;
+	border: lightgray solid 1px;
 	transition: background-color .5s;
 	border-radius: 20px;
 	margin: 15px 0;
+	box-shadow: 0 10px 10px 0 lightgray;
 	/*background-color: lightgreen;*/
 }
 
@@ -411,7 +415,8 @@ _________________________________________
 	position: relative;
 	width: 1080px;
 	height: 175px;
-	border: black dashed 1px;
+	border: lightgray solid 1px;
+	box-shadow: 0 10px 10px 0 lightgray;
 	transition: background-color .5s;
 	border-radius: 20px;
 	margin-top: 15px;
