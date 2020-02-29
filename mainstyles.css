@@ -14,13 +14,13 @@ a {
 }
 
 .welcome {
-	z-index: 10;
+	z-index: 20;
 	position: absolute;
 	color: white;
 	font-family: "Serif";
 	text-align: center;
 	top: 160px;
-	left: 500px;
+	left: 28%;
 	/*background-color: lightgreen;*/
 }
 
@@ -55,6 +55,7 @@ a {
 
 .background img {
 	max-width: 100%;
+	height: 100%;
 }
 
 #header-place {
@@ -77,7 +78,7 @@ a {
 	/*margin-top: -8px;
 	margin-left: -8px;*/
 	margin: 0;
-	z-index: 30;
+	z-index: 100;
 	top: 0;
 	/*background-image: linear-gradient(270deg, #30cfd0 0%, #330867 100%);*/
 	/*background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
@@ -223,7 +224,9 @@ _________________________________________
 	margin: 100px auto 0 auto;
 	width: 1080px;
 	height: 450px;
-	/*border: black dashed 1px;*/
+	z-index: 50;
+	/*background-color: green;
+	border: black dashed 1px;*/
 }
 
 .main-center1 #main_img img {
@@ -356,7 +359,7 @@ _________________________________________
 	width: 100%;
 	bottom: 0px;
 	left: 0;
-	z-index: 10;
+	z-index: 100;
 	height: 40px;
 	box-shadow: 0px 0px 20px 0px lightgray;
 }
@@ -412,7 +415,7 @@ _________________________________________
 	transition: background-color .5s;
 	border-radius: 20px;
 	margin-top: 15px;
-	z-index: 20;
+	z-index: 50;
 	/*background-color: lightgreen;*/
 }
 
