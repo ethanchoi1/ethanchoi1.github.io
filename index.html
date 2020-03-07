@@ -6,22 +6,29 @@
 	<meta charset="utf-8"/>
 </head>
 
-<body>
+<body id="body">
+
+	<script src="script.js"></script>
+
 	<div class="welcome">
 		<p>Ethan Choi</p>
-		<a href="#header-place">
-			<button type="button">Let's Go</button>
+		<a href="#header">
+			<button type="button">Click Me!</button>
 		</a>
 	</div>
-	<div class="background">
+	<div id="background">
 		<img src="Images/mountain-background.JPG">
+
 	</div>
 
+	<div id="header-spacer"></div>
 	<div id="header-place"></div>
-	<div id="header">
-		<div class="title">
-			<a href="https://ethanchoi1.github.io">Ethan Choi</a>
-		</div>
+
+<div id="header">
+	<div class="title">
+		<a href="#background">Ethan Choi</a>
+	</div>
+
 	<div class="navbar">
 		<ul>
 			<li id="about"><a href="#header-place">About</a></li>
@@ -38,6 +45,7 @@
 		</ul>
 	</div>
 </div>
+
 
 <div class="main-center1">
 	<div id="main_img">
@@ -180,6 +188,9 @@
 	</div>
 </div>
 
+<!--
+<button id="test" type="button" onclick="changeBackgroundColor('lightgreen')">test</button>
+-->
 <div class="footer">
 	<p>
 		<div class="contacts">
