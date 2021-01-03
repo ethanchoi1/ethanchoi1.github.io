@@ -3,552 +3,78 @@ html {
 }
 
 body {
-	/*background-color: rgb(229, 92, 84);*/
-	/*#031f2b*/
-	margin: 0;
-	font-family: "Calibri Light", "Arial", "Veranda", "Times New Roman";
-}
-
-a {
-	outline: 0;
-}
-
-.welcome {
-	position: relative;
-	color: white;
-	font-family: "Serif";
-	text-align: center;
-	width: 825px;
-	/*background-color: lightgreen;*/
-	top: 350px;
-	margin: -180px auto 0 auto;
-	height: 0px;
-	z-index: 1000;
-}
-
-.welcome p {
-	font-size: 180px;
-}
-
-.welcome button {
-	position: relative;
-	top: -180px;
-	color: white;
-	font-size: 60px;
-	font-family: "Serif";
-	background: transparent;
-	border-radius: 6px;
-	transition: background-color .5s, color .5s;
-}
-
-.welcome button:hover {
-	cursor: pointer;
-	background-color: white;
-	color: black;
-}
-
-#background {
-	top: 0px;
-	position: relative;
-	width: 100%;
-	margin-bottom: -180px;
-	/*background-color: pink;*/
-}
-
-#background img {
-	display: block;
-	max-width: 100%;
-	min-width: 100%;
-	height: 100%;
-}
-
-
-#header-spacer {
-	position: relative;
-	/*background-color: lightgreen;*/
-	height: 100px;
-	z-index: 100;
-}
-
-#header {
-	/*
-	f22948
-	AC001B
-	DF0023
-	*/
-	background-color: white;
-	width: 100%;
-	min-width: 1080px;
-	height: 92px;
-	position: sticky;
-	padding-bottom: 8px;
-	/*margin-top: -8px;
-	margin-left: -8px;*/
-	margin: 0;
-	z-index: 100;
-	top: 0;
-	/*background-image: linear-gradient(270deg, #30cfd0 0%, #330867 100%);*/
-	/*background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-	border-bottom: solid lightgray 1px;*/
-	box-shadow: 0px 0px 20px 0px lightgray;
-}
-
-.title {
-	background-color: transparent;
-	margin-left: 40px;
-	margin-top: 0px;
-	display: inline-block;
-	font-size: 80px;
-	position: absolute;
-	top: 4px;
-	left: 50px;
-}
-
-.title a {
-	color: #31cec9;
-	text-decoration: none;
-	opacity: 1;
-	transition: opacity .5s;
-}
-
-.title a:hover {
-	opacity: .5;
-}
-
-.navbar {
-	position: absolute;
-	top: 25px;
-	right: 50px;
-	background-color: transparent;
-}
-
-.navbar ul li {
-	display: inline-block;
-	background-color: transparent;
-	margin: 0 25px 0 25px;
-	font-size: 40px;
-	position: relative;
-}
-
-.navbar li a {
-	text-decoration: none;
-	color: gray;
-}
-
-.projects-dropdown {
-	position: relative;
-	background-color: transparent;
-	display: inline-block;
-}
-
-.projects-dropdown #projects {
-	padding-bottom: 1px;
-	/*border-bottom: 5px solid lightgray;*/
-	transition: opacity .5s, border-bottom .5s;
-}
-
-.projects-dropdown:hover #projects {
-	opacity: .5;
-	/*border-bottom: 5px solid #DF0023;*/
-}
-
-.projects-dropdown:hover .dropdown-content {
-	background-color: lightgray;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-	visibility: visible;
-	opacity: 1;
-	transition: visibility 0s, opacity 1s;
-	display: inline-flex;
-}
-
-.dropdown-content {
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  	z-index: 1;
-	top: 52px;
-	text-align: center;
-	font-size: 20px;
-}
-
-.dropdown-content ul li {
-	display: inline-block;
-	background-color: lightgray;
-}
-
-.dropdown-content ul li a {
-	text-decoration: none;
-	font-size: 10px;
-}
-
-#contact {
-	/*border-bottom: 5px solid lightgray;*/
-	transition: opacity .5s, border-bottom .5s;
-}
-
-#contact:hover {
-	opacity: .5;
-	/*border-bottom: 5px solid #DF0023;*/
-}
-
-#center-alignment1 {
-	top: -20px;
-	position: relative;
-	margin: 100px auto;
-	width: 1080px;
-	height: 600px
-	border-radius: 20px;
-	/*background-color: lightgreen;*/
-}
-
-#about {
-	transition: opacity .5s, border-bottom .5s;
-}
-
-#about:hover {
-	opacity: .5;
-}
-
-#test {
-
-}
-
-/* 
-_________________________________________
-*****************************************
-*****************************************
-*****       MAIN PAGE STYLES        *****
-*****************************************
-*****************************************
-
-*/
-
-.main-center1 {
-	/*background-color: lightblue;*/
-	top: -60px;
-	left: 100px;
-	position: relative;
-	margin: 100px auto 0 auto;
-	width: 1080px;
-	height: 450px;
-	z-index: 50;
-	/*background-color: green;
-	border: black dashed 1px;*/
-}
-
-.main-center1 #main_img img {
-	height: auto;
-	float: left;
-	position: absolute;
-	border: solid 8px #31cec9;
-	display: block;
-	left: -100px;
-	top: 30px;
-	height: 120%;
-	box-shadow: 0 30px 30px 0 lightgray;
-	border-radius: 10px;
-}
-
-.main-center1 .about {
-	position: absolute;
-	left: 350px;
-	top: 18px;
-}
-
-.about-Ethan-title p {
-	position: relative;
-	left: 2.5%;
-	top: -25px;
-	font-weight: bold;
-	font-size: 36px;
-}
-
-.about-Ethan {
-	/*background-color: pink;*/
-	position: relative;
-	left: 2.5%;
-	top: -50px;
-}
-
-.main-center2 {
-	/*background-color: lightblue;*/
-	top: 75px;
-	padding-bottom: 50px;
-	position: relative;
-	margin: 15px auto;
-	width: 1080px;
-	height: 210px;
-	/*border: black dashed 1px;*/
-}
-
-.fun-facts {
-	/*background-color: lightgreen;*/
-	position: absolute;
-	left: 0px;
-	top: 18px;
-}
-
-.main-center2 a {
-	color: black;
-	text-decoration: none;
-	transition: opacity .5s;
-}
-
-.main-center2 a:hover {
-	opacity: .5;
-}
-
-#main-center3 {
-	/*background-color: lightblue;*/
-	top: -20px;
-	padding-bottom: 50px;
-	position: relative;
-	margin: 15px auto;
-	width: 1080px;
-	height: 80px;
-	/*border: black dashed 1px;*/
-}
-
-#main-center4 {
-	/*background-color: lightblue;*/
-	top: -200px;
-	padding-bottom: 50px;
-	position: relative;
-	margin: 15px auto;
-	width: 1080px;
-	height: 80px;
-	/*border: black dashed 1px;*/
-}
-
-.contact-center1 {
-	top: -20px;
-	position: relative;
-	width: 1080px;
-	height: 175px;
-	border: lightgray solid 1px;
-	transition: background-color .5s;
-	border-radius: 20px;
-	margin: 15px 0;
-	box-shadow: 0 10px 10px 0 lightgray;
-	/*background-color: lightgreen;*/
-}
-
-.contact-center1:hover {
-	background-color: #eee;
-}
+    background-color: #051622;
 
-.contact-body {
-	/*background-color: lightgreen;*/
-	position: absolute;
-	left: 0px;
-	top: 110px;
+    background-color: #425664;
+    background-color: #425664;
+    /* background-color: #1d2a33; */
+    /* background-color: #c6ad8f; */
+    /* background-color: #f6f4f2;  */
+    font-family: "Calibri Light", "Arial", "Veranda", "Times New Roman";
+    /* height: 10000px; */
+    margin: 0;
 }
 
-.about-Ethan {
-	/*background-color: pink;*/
-	position: relative;
-	left: 2.5%;
-	font-size: 24px;
-	top: -50px;
+.header {
+    color: #FFF9EF;
+    font: 72px "Times New Roman";
+    height: 80px;
+    margin: 90px auto 10px auto;
+    /* padding: 0 0 0 10px; */
+    width: 728px;
 }
 
-/*
-.fun-facts-body {
-	background-color: pink;
-	position: relative;
-	top: -50px;
+.main {
+    background-color: #FFF9EF;
+    border: solid #C6AD8F 10px;
+    height: 2000px;
+    margin: 0 auto 80px auto;
+    width: 728px;
 }
-*/
 
-.footer {
-	/*
-	background-color: #00d4ff;
-	*/
-	background: white;
-	position: relative;
-	width: 100%;
-	bottom: 0px;
-	left: 0;
-	z-index: 100;
-	height: 40px;
-	box-shadow: 0px 0px 20px 0px lightgray;
+.section {
+    margin: 0 0 10px 0;
+    padding: 0 10px 0 10px;
 }
 
-.footer a {
-	text-decoration: none;
-	color: gray;
-	transition: opacity .5s;
+.section-title {
+    display: inline-block;
+    font-size: 40px;
+    padding: 0 0 0 5px;
 }
 
-.footer a:hover {
-	opacity: .5;
+.section-body {
+    /* display: inline-block; */
+    font-size: 18px;
+    padding: 0 5px 0 5px;
+    width: calc(100% - 256px - 10px - 10px)
 }
 
-.footer #view-on-github {
-	/*background-color: lightgreen;*/
-	position: absolute;
-	display: inline-block;
-	top: 2px;
-	right: 2%;
-	font-size: 24px;
+.section-image {
+    /* border: solid green 2px; */
+    /* display: inline-block; */
+    float: right;
+    height: 100%;
 }
 
-.footer .contacts {
-	/*background-color: lightgreen;*/
-	position: absolute;
-	display: inline-block;
-	top: 2px;
-	left: 2%;
-	font-size: 24px;
+#main-self {
+    border: solid #425664 3px;
+    /* float: right; */
+    margin: 53px 0 0 0;
+    width: 256px;
 }
 
-.footer .contacts a {
-	margin-right: 24px;
-}
-
-/* 
-_________________________________________
-*****************************************
-*****************************************
-*****      PROJECT PAGE STYLES      *****
-*****************************************
-*****************************************
-
-*/
-
-.project-center1 {
-	top: 0px;
-	position: relative;
-	width: 1080px;
-	height: 175px;
-	border: lightgray solid 1px;
-	box-shadow: 0 10px 10px 0 lightgray;
-	transition: background-color .5s;
-	border-radius: 20px;
-	margin-top: 15px;
-	z-index: 50;
-	/*background-color: lightgreen;*/
-}
-
-.project-center1:hover {
-	background-color: #eee;
-}
-
-.project-body1 {
-	/*background-color: pink;*/
-	top: 0;
-	max-width: 65%;
-	height: 42.5%;
-	position: relative;
-}
-
-.project-about-title1 {
-	/*background-color: lightgreen;*/
-	top: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
-
-.project-about1 {
-	/*background-color: lightblue;*/
-	top: 0;
-	max-width: 100%;
-	height: 42.5%;
-	position: absolute;
-}
-
-.project-about-title1 p {
-	position: relative;
-	left: 2.5%;
-	top: -25px;
-	font-weight: bold;
-	font-size: 36px;
-}
 
-.project-about1 p {
-	position: relative;
-	left: 2.5%;
-	font-size: 24px;
-	top: 50px;
+/* Borders for debugging */
+/* .header {
+    border-left: solid pink 2px;
 }
-
-#google-homepage-thumbnail img {
-	height: auto;
-	float: right;
-	position: absolute;
-	display: block;
-	right: 1%;
-	top: 7%;
-	width: 20%;
-	height: 80%;
-	border-radius: 10px;
-	border: solid 2px;
-}
-
-.clickable {
-	top: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-}
-
-.github-logo img {
-	position: relative;
-	float: right;
-	top: -140px;
-	right: -110px;
-	width: 10%;
-	height: 10%;
-	transition: opacity .5s;
-}
-
-.github-logo img:hover {
-	opacity: .5;
+.section {
+    border: solid pink 2px;
 }
-
-/* 
-_________________________________________
-*****************************************
-*****************************************
-*****      CONTACT PAGE STYLES      *****
-*****************************************
-*****************************************
-
-*/
-
-
-.center-alignment2 {
-	top: -175px;
-	position: relative;
-	margin: 100px auto;
-	width: 1080px;
-	height: 600px
-	border: black dashed 1px;
-	border-radius: 20px;
-	/*background-color: lightgreen;*/
-}
-
-.contact-about-title p {
-	position: relative;
-	left: 10%;
-	top: -20px;
-	font-weight: bold;
-	font-size: 64px;
-}
-
-#contact-logo img {
-	height: auto;
-	float: right;
-	position: absolute;
-	display: block;
-	right: 3%;
-	top: 7%;
-	width: 13%;
-	height: 80%;
-	border-radius: 10px;
+.section-title {
+    border: solid red 2px;
 }
+.section-body {
+    border: solid blue 2px;
+} */
