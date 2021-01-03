@@ -3,16 +3,18 @@ html {
 }
 
 body {
-    background-color: #051622;
-
-    background-color: #425664;
+    /* background-color: #051622; */
     background-color: #425664;
     /* background-color: #1d2a33; */
     /* background-color: #c6ad8f; */
     /* background-color: #f6f4f2;  */
     font-family: "Calibri Light", "Arial", "Veranda", "Times New Roman";
-    /* height: 10000px; */
     margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .header {
@@ -20,14 +22,12 @@ body {
     font: 72px "Times New Roman";
     height: 80px;
     margin: 90px auto 10px auto;
-    /* padding: 0 0 0 10px; */
     width: 728px;
 }
 
 .main {
     background-color: #FFF9EF;
     border: solid #C6AD8F 10px;
-    height: 2000px;
     margin: 0 auto 80px auto;
     width: 728px;
 }
@@ -47,7 +47,6 @@ body {
     /* display: inline-block; */
     font-size: 18px;
     padding: 0 5px 0 5px;
-    width: calc(100% - 256px - 10px - 10px)
 }
 
 .section-image {
@@ -55,6 +54,20 @@ body {
     /* display: inline-block; */
     float: right;
     height: 100%;
+}
+
+.section-link {
+    font-size: 18px;
+    padding: 0 5px 0 5px;
+}
+
+.section-link:hover {
+    background-color: rgb(128, 128, 128, 0.4);
+    cursor: pointer;
+}
+
+#body1 {
+    width: calc(100% - 256px - 10px - 10px)
 }
 
 #main-self {
@@ -66,7 +79,7 @@ body {
 
 
 /* Borders for debugging */
-/* .header {
+.header {
     border-left: solid pink 2px;
 }
 .section {
@@ -77,4 +90,7 @@ body {
 }
 .section-body {
     border: solid blue 2px;
-} */
+}
+.section-link {
+    border: solid lightblue 2px;
+}
