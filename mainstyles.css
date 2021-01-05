@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+img {
+    vertical-align: bottom;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -33,32 +37,44 @@ a {
 }
 
 .section {
+    /* display: inline-block; */
     margin: 0 0 10px 0;
-    padding: 0 10px 0 10px;
+    /* padding: 0 10px 0 10px; */
 }
 
 .section-title {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 40px;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 15px;
 }
 
 .section-body {
     /* display: inline-block; */
     font-size: 18px;
-    padding: 0 5px 0 5px;
+    padding: 0 15px 0 15px;
 }
 
 .section-image {
     /* border: solid green 2px; */
     /* display: inline-block; */
     float: right;
-    height: 100%;
+    /* position: relative; */
+    margin: 0 0 0 auto;
+    padding: 0 0 -10px 0;
+    /* height: 100%; */
 }
 
 .section-link {
+    align-items: center;
+    display: flex;
     font-size: 18px;
-    padding: 0 5px 0 5px;
+    /* justify-content: right; */
+    padding: 0 15px 0 15px;
+    position: relative;
+}
+
+.section-link-name {
+    font-size: 40px;
 }
 
 .section-link:hover {
@@ -67,19 +83,27 @@ a {
 }
 
 #body1 {
-    width: calc(100% - 256px - 10px - 10px)
+    width: calc(100% - 256px - 30px - 10px - 6px)
 }
 
 #main-self {
     border: solid #425664 3px;
-    /* float: right; */
-    margin: 53px 0 0 0;
+    margin: 0 10px 0 0;
     width: 256px;
 }
 
+.link-img {
+    width: 128px;
+}
+
+
+
+
+
 
 /* Borders for debugging */
-.header {
+
+/* .header {
     border-left: solid pink 2px;
 }
 .section {
@@ -94,3 +118,6 @@ a {
 .section-link {
     border: solid lightblue 2px;
 }
+.section-image {
+    border: solid green 2px;
+} */
