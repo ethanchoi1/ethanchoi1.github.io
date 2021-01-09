@@ -56,25 +56,20 @@ a {
 
 .section-image {
     /* border: solid green 2px; */
-    /* display: inline-block; */
+    /* display: flex; */
     float: right;
     /* position: relative; */
-    margin: 0 0 0 auto;
-    padding: 0 0 -10px 0;
+    margin: 0 0 0 10px;
     /* height: 100%; */
 }
 
 .section-link {
-    align-items: center;
-    display: flex;
+    /* align-items: center; */
+    /* display: flex; */
     font-size: 18px;
     /* justify-content: right; */
-    padding: 0 15px 0 15px;
-    position: relative;
-}
-
-.section-link-name {
-    font-size: 40px;
+    padding: 5px 15px 5px 15px;
+    /* position: relative; */
 }
 
 .section-link:hover {
@@ -82,8 +77,19 @@ a {
     cursor: pointer;
 }
 
+.section-link-title {
+    /* display: inline-block; */
+    font-size: 24px;
+}
+
+.section-link-description {
+    /* display: inline-block; */
+    /* position: relative; */
+    width: calc(100% - 4px);
+}
+
 #body1 {
-    width: calc(100% - 256px - 30px - 10px - 6px)
+    /* width: calc(100% - 256px - 30px - 10px - 6px) */
 }
 
 #main-self {
@@ -120,4 +126,10 @@ a {
 }
 .section-image {
     border: solid green 2px;
+}
+.section-link-title {
+    border: solid orange 2px;
+}
+.section-link-description {
+    border: solid purple 2px;
 } */
