@@ -3,12 +3,8 @@ html {
 }
 
 body {
-    /* background-color: #051622; */
     background-color: #425664;
-    /* background-color: #1d2a33; */
-    /* background-color: #c6ad8f; */
-    /* background-color: #f6f4f2;  */
-    font-family: "Calibri Light", "Arial", "Veranda", "Times New Roman";
+    font-family: "Calibri Light", Arial, Verdana, sans-serif;
     margin: 0;
 }
 
@@ -23,53 +19,48 @@ a {
 
 .header {
     color: #FFF9EF;
-    font: 72px "Times New Roman";
+    font-family: "Times New Roman", serif;
+    font-size: 72px;
     height: 80px;
     margin: 90px auto 10px auto;
     width: 798px;
 }
 
+.header-title {
+    padding: 0 0 0 45px;
+}
+
 .main {
     background-color: #FFF9EF;
-    /* border: solid #C6AD8F 10px; */
     margin: 0 auto 80px auto;
+    padding: 35px;
     width: 728px;
 }
 
 .section {
-    /* display: inline-block; */
     margin: 0 0 20px 0;
-    /* padding: 0 10px 0 10px; */
 }
 
 .section-title {
-    /* display: inline-block; */
     font-size: 48px;
     padding: 0 0 0 15px;
 }
 
 .section-body {
-    /* display: inline-block; */
     font-size: 18px;
     padding: 0 15px 0 15px;
 }
 
 .section-image {
-    /* border: solid green 2px; */
-    /* display: flex; */
     flex-grow: 1;
     float: right;
-    /* position: relative; */
     margin: 0 0 0 10px;
-    /* height: 100%; */
 }
 
 .section-link {
-    /* align-items: center; */
-    /* display: flex; */
     font-size: 18px;
-    /* justify-content: right; */
     padding: 5px 15px 5px 15px;
+    /* padding-left: 17px; */
     position: relative;
 }
 
@@ -78,18 +69,15 @@ a {
 }
 
 .section-link:hover {
-    background-color: rgb(128, 128, 128, 0.4);
+    background-color: rgba(230, 209, 173, 0.4);
     cursor: pointer;
 }
 
 .section-link-title {
-    /* display: inline-block; */
     font-size: 30px;
 }
 
 .section-link-description {
-    /* display: inline-block; */
-    /* position: relative; */
     width: calc(100% - 4px);
 }
 
@@ -123,26 +111,37 @@ a {
     width: 64px;
 }
 
-/* .section-link, .section-body {
-    padding-left: 30px;
-} */
-
-.section-link {
-    padding-left: 17px;
+@media only screen and (max-width: 798px) {
+    .header {
+        margin: 0;
+        text-align: center;
+        width: 100vw;
+    }
+    .header-title {
+        padding: 0 0 0 0;
+    }
+    .main {
+        padding: 35px 0 35px 0;
+        width: 100vw;
+    }
+    #main-self {
+        width: 25vw;
+    }
 }
 
-.main {
-    padding: 35px;
-}
-
-.header-title {
-    padding: 0 0 0 45px;
+@media only screen and (max-width: 350px) {
+    .header {
+        font-size: 60px;
+    }
 }
 
 /* Borders for debugging */
 
 /* .header {
     border: solid pink 2px;
+}
+.main {
+    border: solid darkgreen 2px;
 }
 .section {
     border: solid pink 2px;
