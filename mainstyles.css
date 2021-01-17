@@ -117,16 +117,18 @@ a {
 
 @media only screen and (max-width: 798px) {
     .header {
-        margin: 0;
+        margin: 40px auto 10px auto;
         text-align: center;
-        width: 100vw;
+        width: calc(100vw - 20px);
     }
     .header-title {
-        padding: 0 0 0 0;
+        padding: 20px 0 20px 0;
     }
     .main {
-        padding: 35px 0 35px 0;
-        width: 100vw;
+        /* padding: 35px 0px 35px 0px; */
+        margin: 0 auto 0 auto;
+        padding: 35px 10px 35px 10px;
+        width: calc(100vw - 20px);
     }
     #main-self {
         width: 25vw;
