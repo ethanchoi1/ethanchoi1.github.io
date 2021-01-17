@@ -81,6 +81,10 @@ a {
     width: calc(100% - 4px);
 }
 
+.repo-link {
+    font-weight: bold;
+}
+
 #main-self {
     border: solid #425664 5px;
     margin: 0 10px 0 0;
