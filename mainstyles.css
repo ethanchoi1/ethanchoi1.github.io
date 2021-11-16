@@ -60,12 +60,12 @@ a {
 .section-link {
     font-size: 18px;
     padding: 5px 15px 5px 15px;
-    /* padding-left: 17px; */
     position: relative;
 }
 
 .main-link {
     margin: 10px 0 0 0;
+    min-height: 179px;
 }
 
 .section-link:hover {
@@ -83,6 +83,7 @@ a {
 
 .repo-link {
     font-weight: bold;
+    text-align: center;
 }
 
 #main-self {
@@ -115,6 +116,11 @@ a {
     width: 64px;
 }
 
+.disabled, .disabled:hover {
+    cursor: auto;
+    background-color: #FFF9EF;
+}
+
 @media only screen and (max-width: 798px) {
     .header {
         margin: 40px auto 10px auto;
@@ -125,7 +131,6 @@ a {
         padding: 20px 0 20px 0;
     }
     .main {
-        /* padding: 35px 0px 35px 0px; */
         margin: 0 auto 0 auto;
         padding: 35px 10px 35px 10px;
         width: calc(100vw - 20px);
@@ -140,36 +145,3 @@ a {
         font-size: 60px;
     }
 }
-
-/* Borders for debugging */
-
-/* .header {
-    border: solid pink 2px;
-}
-.main {
-    border: solid darkgreen 2px;
-}
-.section {
-    border: solid pink 2px;
-}
-.section-title {
-    border: solid red 2px;
-}
-.section-body {
-    border: solid blue 2px;
-}
-.section-link {
-    border: solid lightblue 2px;
-}
-.section-image {
-    border: solid green 2px;
-}
-.section-link-title {
-    border: solid orange 2px;
-}
-.section-link-description {
-    border: solid purple 2px;
-} 
-.contact {
-    border: solid coral 2px;
-} */
